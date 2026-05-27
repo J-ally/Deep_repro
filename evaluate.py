@@ -109,6 +109,11 @@ def main(cfg: DictConfig):
                 ylabel="True label",
                 title="Confusion Matrix",
             )
+            thresh = cm.max() / 2.0
+            for i in range(cm.shape[0]):
+                for j in range(cm.shape[1]):
+                    ax.text(j, i, cm[i, j], ha="center", va="center",
+                            color="white" if cm[i, j] > thresh else "black")
             fig.tight_layout()
             mlflow.log_figure(fig, "confusion_matrix.png")
             plt.close(fig)
