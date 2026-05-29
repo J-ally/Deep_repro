@@ -2,15 +2,22 @@
 
 Industrial tools used to train and deploy machine learning models are valued for their reliability, flexibility, and ease of use. Drawing from our experience working with large, constantly evolving codebases (particularly in deep learning research projects) we would like to share a simple yet effective setup for making experiments both traceable and reproducible.
 
-This repo is a more intricated example of reproducibility in deep learning, a standard example using Linear Regression is available in the [Linear_regression_reproducibility](https://github.com/J-ally/Deep_repro_LR) repository.
+This repo is a more intricate example of reproducibility in deep learning, a standard example using Linear Regression is available in the [Linear_regression_reproducibility](https://github.com/J-ally/Deep_repro_LR) repository.
 
 Slides for the presentation are available in the /slides folder.
 
+## Structure of the repo
 
-# Installing everyting
+The important files of the repo are the following :
+- `pyproject.toml`, `uv.lock` and `.python-version`: UV configuration files. It is used by uv to create the virtual environment and install the dependencies.
+- `dataops/pretraitment.py`: the script to download and preprocess the dataset.
+- `train.py`: the main script to run the training of the model, it contains the main function and the training loop.
+- `evaluate.py`: the script to evaluate a model, it takes as input the run_id of the mlflow run to evaluate.
+- `conf/` folder: the configuration files for the experiment
 
-To install the required dependencies, you can use the following command:
+# Installing everything
 
+Once uv is installed ([uv install doc](https://docs.astral.sh/uv/getting-started/installation/)), to install the required dependencies, you can use the following command:
 ```bash
 uv sync
 ```
@@ -29,7 +36,7 @@ uv run train.py
 
 # Inspecting the results
 
-To inspect the results, you can use the following command:
+Once the python is loaded correctly in your shell (if not automatically done, you can activate it with $ source .venv/bin/activate at the root of the repo), you can launch MLflow. To inspect the results, you can use the following command:
 
 ```bash
 mlflow ui
