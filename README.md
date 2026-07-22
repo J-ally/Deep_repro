@@ -39,16 +39,20 @@ uv run train.py
 The code contains numbered `##TODO n##` markers to complete. Each is linked below with a short description:
 
 - [TODO 1](conf/model/cnn.yaml#L1) - write the CNN model config following `mlp.yaml` and the `SimpleCNN` class.
-- [TODO 2](train.py#L136) — complete the `@hydra.main` decorator parameters (config path/name).
-- [TODO 3](train.py#L119) — log the best checkpoint as an MLflow artifact.
-- [TODO 4](train.py#L125) — log the periodic checkpoint as an MLflow artifact.
-- [TODO 5](train.py#L146) — instantiate the data object from the Hydra config.
-- [TODO 6](train.py#L167) — log training parameters and model hyperparameters to MLflow.
-- [TODO 7](evaluate.py#L21) — complete the `@hydra.main` decorator parameters (config path/name).
-- [TODO 8](evaluate.py#L37) — complete the artifact URIs for the config and best checkpoint.
-- [TODO 9](evaluate.py#L50) — instantiate the data object from the Hydra config.
-- [TODO 10](evaluate.py#L130) — log the confusion matrix as an MLflow artifact.
-- [TODO 11](train.py#L155) — uncomment the MLflow tracking URI to compete on the shared dashboard (also in [evaluate.py](evaluate.py#L28)). **This otpion is onlyh available during the in person workshop. If you're using this material by yourself maintain the local tracking**
+- [TODO 2](train.py#L136) - complete the `@hydra.main` decorator parameters (config path/name).
+- [TODO 3](train.py#L119) - log the best checkpoint as an MLflow artifact.
+- [TODO 4](train.py#L125) - log the periodic checkpoint as an MLflow artifact.
+- [TODO 5](train.py#L146) - instantiate the data object from the Hydra config.
+- [TODO 6](train.py#L167) - log training parameters and model hyperparameters to MLflow.
+- [TODO 7](evaluate.py#L21) - complete the `@hydra.main` decorator parameters (config path/name).
+- [TODO 8](evaluate.py#L37) - complete the artifact URIs for the config and best checkpoint.
+- [TODO 9](evaluate.py#L50) - instantiate the data object from the Hydra config.
+- [TODO 10](evaluate.py#L130) - log the confusion matrix as an MLflow artifact.
+- [TODO 11](train.py#L155) - uncomment the MLflow tracking URI to compete on the shared dashboard (also in [evaluate.py](evaluate.py#L28)). **This option is only available during the in person workshop. If you're using this material by yourself maintain the local tracking**
+
+### Correction
+
+Correction for exercises is available on the `correction` branch
 
 # Inspecting the results
 
@@ -84,7 +88,3 @@ Each example is assigned to one of the following labels:
 - 7 Sneaker
 - 8 Bag
 - 9 Ankle boot
-
-# Correction
-
-Correction for exercises is available on the `correction` branch
