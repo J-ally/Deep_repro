@@ -68,3 +68,7 @@ Each example is assigned to one of the following labels:
 - 7 Sneaker
 - 8 Bag
 - 9 Ankle boot
+
+# Correction
+
+Correction for the exercises is available on the `correction` branch
