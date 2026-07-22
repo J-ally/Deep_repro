@@ -71,4 +71,4 @@ Each example is assigned to one of the following labels:
 
 # Correction
 
-Correction for the exercises is available on the `correction` branch
+Correction for exercises is available on the `correction` branch
